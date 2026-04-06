@@ -1,0 +1,13 @@
+{
+    "name": "Minimal Twitch",
+    "description": "Gets rid of design practices by Twitch that aims to take away all your time.",
+    "version": "1.0",
+    "manifest_version": 3,
+    "content_scripts": [
+        {
+            "matches": ["*://*.twitch.tv/*"],
+            "css": ["styles.css"],
+            "js": ["content.js"]
+        }
+    ]
+}

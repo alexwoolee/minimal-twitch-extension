@@ -1,0 +1,9 @@
+div[aria-label="Live Channels"], 
+div[aria-label$="Viewers Also Watch"],
+div[aria-label="Recommended Categories"],
+button[aria-label="Go Ad-Free for Free"],
+button[data-a-target="top-nav-get-bits-button"],
+button[data-a-target="prime-offers-icon"],
+button[data-a-target="whisper-box-button"]  {
+    display: none !important;
+}
