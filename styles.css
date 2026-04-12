@@ -3,7 +3,19 @@ div[aria-label$="Viewers Also Watch"],
 div[aria-label="Recommended Categories"],
 button[aria-label="Go Ad-Free for Free"],
 button[data-a-target="top-nav-get-bits-button"],
-button[data-a-target="prime-offers-icon"],
-button[data-a-target="whisper-box-button"]  {
+button[data-a-target="whisper-box-button"],
+button[aria-label="Community"],
+button:has([data-a-target="tw-core-button-label-text"]),
+button[aria-label="Expand Top Gifters Leaderboard"],
+button[aria-label="Share"],
+button[aria-label="More Options"],
+button[aria-label="More options"],
+a[aria-label="Browse"],
+a[aria-label^="Tag"],
+div[data-a-target="about-panel"],
+button[aria-label="Open Notifications"],
+button[aria-label="Prime offers"],
+section[aria-labelledby="chat-room-header-label"] > div[aria-hidden="false"],
+#chat-room-header-label {
     display: none !important;
 }
