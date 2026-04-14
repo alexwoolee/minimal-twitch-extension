@@ -15,7 +15,22 @@ a[aria-label^="Tag"],
 div[data-a-target="about-panel"],
 button[aria-label="Open Notifications"],
 button[aria-label="Prime offers"],
-section[aria-labelledby="chat-room-header-label"] div[aria-hidden="false"],
-#chat-room-header-label {
+#chat-room-header-label,
+div[aria-label="Followed Channels"] > div:first-child,
+.followed-side-nav-header followed-side-nav-header--expanded,
+div.chat-room__content > div[aria-hidden="false"] {
     display: none !important;
+}
+
+div[aria-label="Followed Channels"] {
+    margin-top: 10px !important;
+}
+
+.side-nav--collapsed div[aria-label="Followed Channels"] {
+    margin-top: 0 !important;
+}
+
+div[data-a-target="chat-input"] {
+    display: flex;
+    align-items: center;
 }
