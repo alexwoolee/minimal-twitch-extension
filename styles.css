@@ -24,6 +24,10 @@ div.chat-room__content > div[aria-hidden="false"],
     display: none !important;
 }
 
+button[data-a-target="unfollow-button"] {
+    display: block !important;
+}
+
 div[aria-label="Followed Channels"] {
     margin-top: 10px !important;
 }
