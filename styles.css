@@ -1,31 +1,49 @@
-div[aria-label="Live Channels"], 
-div[aria-label$="Viewers Also Watch"],
-div[aria-label="Recommended Categories"],
-button[aria-label="Go Ad-Free for Free"],
-button[data-a-target="top-nav-get-bits-button"],
-button[data-a-target="whisper-box-button"],
-button[aria-label="Community"],
-button:has([data-a-target="tw-core-button-label-text"]),
+/* =========================================
+   1. ADS, PROMOS & UPSELLS
+   ========================================= */
+.headliner-ad,
+.top-nav__prime,
+button[aria-label="Expand Hype Train"],
 button[aria-label="Expand Top Gifters Leaderboard"],
-button[aria-label="Share"],
-button[aria-label="More Options"],
-button[aria-label="More options"],
-a[aria-label="Browse"],
-a[aria-label^="Tag"],
-div[data-a-target="about-panel"],
-button[aria-label="Open Notifications"],
+button[aria-label="Go Ad-Free for Free"],
 button[aria-label="Prime offers"],
-#chat-room-header-label,
-div[aria-label="Followed Channels"] > div:first-child,
-.followed-side-nav-header followed-side-nav-header--expanded,
-div.chat-room__content > div[aria-hidden="false"],
-.paid-pinned-chat-message-list,
-.sticky-community-highlight {
+button[data-a-target="top-nav-get-bits-button"],
+div[data-a-target="front-page-carousel"] {
     display: none !important;
 }
 
-button[data-a-target="unfollow-button"] {
+/* =========================================
+   2. CHAT & COMMUNITY UI
+   ========================================= */
+#chat-room-header-label,
+.paid-pinned-chat-message-list,
+.sticky-community-highlight,
+button[aria-label="Community"],
+button[data-a-target="whisper-box-button"],
+div.chat-room__content > div[aria-hidden="false"],
+div[data-test-selector="community-points-summary"] {
+    display: none !important;
+}
+
+div[data-a-target="chat-input"] {
+    display: flex !important;
+    align-items: center !important;
+}
+
+.chat-paused-footer {
     display: block !important;
+}
+
+/* =========================================
+   3. LEFT SIDEBAR (NAVIGATION)
+   ========================================= */
+.followed-side-nav-header,
+.followed-side-nav-header--expanded,
+div[aria-label$="Viewers Also Watch"],
+div[aria-label="Followed Channels"] > div:first-child,
+div[aria-label="Live Channels"],
+div[aria-label="Recommended Categories"] {
+    display: none !important;
 }
 
 div[aria-label="Followed Channels"] {
@@ -36,7 +54,51 @@ div[aria-label="Followed Channels"] {
     margin-top: 0 !important;
 }
 
-div[data-a-target="chat-input"] {
-    display: flex;
-    align-items: center;
+/* =========================================
+   4. CHANNEL PANELS & STREAM INFO
+   ========================================= */
+.channel-panels-container,
+div[data-a-target="about-panel"] {
+    display: none !important;
+}
+
+section[aria-label="Stream Information"] div[data-target="channel-header-right"] {
+    display: flex !important;
+    justify-content: flex-end !important;
+    align-items: center !important;
+}
+
+section[aria-label="Stream Information"] div[data-target="channel-header-right"] > div:first-child {
+    margin-left: auto !important;
+}
+
+button[data-a-target="unfollow-button"], button[data-a-target="follow-button"] {
+    display: block !important;
+}
+
+/* =========================================
+   5. TOP NAVIGATION & MISC BUTTONS
+   ========================================= */
+#front-page-main-content,
+.metadata-layout__secondary-button-spacing,
+.twilight-main,
+a[aria-label$="Previous Search"],
+a[aria-label^="Tag"],
+a[aria-label="Browse"],
+a[aria-label="Following"],
+button[aria-label="More Options"],
+button[aria-label="More options"],
+button[aria-label="Open Notifications"],
+nav[data-a-target="top-nav-container"] button:has(div[data-a-target="tw-core-button-label-text"]),
+button[data-a-target="gift-button"],
+button[data-a-target="subscribe-button"],
+button[aria-label="Share"],
+div[data-target="tw-core-button-label-text"] > *:not(:first-child) {
+    display: none !important;
+}
+
+div[data-target="tw-core-button-label-text"] > div:first-child {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
 }
