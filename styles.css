@@ -3,6 +3,9 @@
    ========================================= */
 .headliner-ad,
 .top-nav__prime,
+div[class*="extensions-dock__dock"],
+div[class*="extensions-dock__dock_hidden"],
+div[class*="extensions-dock-card"],
 button[aria-label="Expand Hype Train"],
 button[aria-label="Expand Top Gifters Leaderboard"],
 button[aria-label="Go Ad-Free for Free"],
@@ -21,7 +24,10 @@ div[data-a-target="front-page-carousel"] {
 button[aria-label="Community"],
 button[data-a-target="whisper-box-button"],
 div.chat-room__content > div[aria-hidden="false"],
-div[data-test-selector="community-points-summary"] {
+div[data-test-selector="community-points-summary"],
+div[class*="hypeTrainBanner"],
+div[class="highlight__click-target"], 
+div[class="community-highlight"] {
     display: none !important;
 }
 
