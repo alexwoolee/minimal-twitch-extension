@@ -31,7 +31,8 @@ div.chat-room__content > div[aria-hidden="false"],
 div[data-test-selector="community-points-summary"],
 div[class*="hypeTrainBanner"],
 div[class="highlight__click-target"], 
-div[class="community-highlight"] {
+div[class="community-highlight"],
+div[data-test-selector="view-all-button"] {
     display: none !important;
 }
 
@@ -98,7 +99,6 @@ a[aria-label="Browse"],
 a[aria-label="Following"],
 button[aria-label="More Options"],
 button[aria-label="More options"],
-button[aria-label="Open Notifications"],
 div[data-test-selector="onsite-notifications__badge"],
 nav[data-a-target="top-nav-container"] button:has(div[data-a-target="tw-core-button-label-text"]),
 button[data-a-target="gift-button"],
